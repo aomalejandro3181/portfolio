@@ -32,7 +32,7 @@ export default function Contact() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Let's talk
+              Let&apos;s talk
             </h2>
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
               Do you have a project in mind? I would love to hear about it and see how I can help you

@@ -33,7 +33,7 @@ export default function Hero() {
 
           <div className='flex justify-end'>
           <p className="text-xl lg:text-right md:text-2xl text-foreground/70 sm:w-full lg:w-1/2 mb-8 sm:text-left md:text-center leading-relaxed">
-          I'm  developer passionate about creating innovative and user-centric web applications. With a focus on clean code and efficient solutions, I bring
+          I&apos;m  developer passionate about creating innovative and user-centric web applications. With a focus on clean code and efficient solutions, I bring
           ideas to life.
           </p>
           </div>
