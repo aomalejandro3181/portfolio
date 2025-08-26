@@ -1897,6 +1897,12 @@
       text-align: left;
     }
   }
+
+  @media (min-width: 64rem) {
+    .lg\:text-right {
+      text-align: right;
+    }
+  }
 }
 
 :root {

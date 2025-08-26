@@ -61,7 +61,7 @@ function Projects() {
     const projects = [
         {
             title: "Homey App",
-            description: "APP para prestar servicios de limpieza en oficinas o casas, Backend con Node.js y Express, Frontend backoffice en Nuxt.js y la app en Flutter.",
+            description: "APP to provide cleaning services in offices or houses, Backend with Node.js and Express, Frontend backoffice in Nuxt.js and the app in Flutter.",
             image: "/images/homey-app.png",
             technologies: [
                 "Flutter",
@@ -70,7 +70,8 @@ function Projects() {
                 "Express",
                 "PostgreSQL",
                 "Nuxt.js",
-                "Tailwind"
+                "Tailwind",
+                "Shadcn"
             ],
             liveUrl: "#",
             githubUrl: "https://github.com/aomalejandro3181/homey",
@@ -78,7 +79,7 @@ function Projects() {
         },
         {
             title: "Chatbot Whatsapp",
-            description: "Chatbot que puede interactuar con los usuarios a traves de whatsapp, puede responder preguntas, buscar información y Generar Ventas, las ventas de guardan en un google sheet.",
+            description: "Chatbot that can interact with users through whatsapp, can answer questions, search information and generate sales, sales are saved in a google sheet.",
             image: "/images/chatbots-whatsapp.png",
             technologies: [
                 "Node.js",
@@ -93,7 +94,7 @@ function Projects() {
         },
         {
             title: "Store Website",
-            description: "Tienda en línea con sistema de carrito de compras con Next.js.",
+            description: "Online store with shopping cart system using Next.js and Context API.",
             image: "/api/placeholder/600/400",
             technologies: [
                 "Next.js",
@@ -101,12 +102,12 @@ function Projects() {
                 "Tailwind CSS"
             ],
             liveUrl: "#",
-            githubUrl: "#",
+            githubUrl: "https://github.com/aomalejandro3181/react-store",
             featured: false
         },
         {
             title: "Portfolio Website",
-            description: "Sitio web portfolio responsive con animaciones suaves y optimización SEO completa.",
+            description: "Portfolio website responsive with smooth animations and complete SEO optimization.",
             image: "",
             technologies: [
                 "Next.js",
@@ -120,7 +121,7 @@ function Projects() {
         },
         {
             title: "Analytics Dashboard",
-            description: "Dashboard interactivo para visualización de datos con gráficos en tiempo real y reportes personalizables.",
+            description: "Interactive dashboard for data analysis and visualization with real-time charts and customizable reports.",
             image: "/api/placeholder/600/400",
             technologies: [
                 "Vue.js",
@@ -135,7 +136,7 @@ function Projects() {
         },
         {
             title: "Weather App",
-            description: "Aplicación del clima con geolocalización, pronósticos detallados y notificaciones personalizadas.",
+            description: "Weather application with geolocation, detailed forecasts and personalized notifications.",
             image: "",
             technologies: [
                 "React Native",
@@ -315,7 +316,7 @@ function Projects() {
                                                                 lineNumber: 139,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            "Ver Proyecto"
+                                                            "More Details"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.tsx",
@@ -344,7 +345,7 @@ function Projects() {
                                                                 lineNumber: 148,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            "Código"
+                                                            "Code"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.tsx",
@@ -378,7 +379,7 @@ function Projects() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 className: "text-3xl font-bold text-foreground mb-8 text-center",
-                                children: "Otros Proyectos"
+                                children: "Other Projects"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Projects.tsx",
                                 lineNumber: 161,
@@ -460,7 +461,7 @@ function Projects() {
                                                                 lineNumber: 200,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            "Ver"
+                                                            "More Details"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.tsx",
@@ -489,7 +490,7 @@ function Projects() {
                                                                 lineNumber: 209,
                                                                 columnNumber: 23
                                                             }, this),
-                                                            "Código"
+                                                            "Code"
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Projects.tsx",

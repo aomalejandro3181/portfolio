@@ -19,16 +19,16 @@ export default function Footer() {
             <div className="md:col-span-2">
               <div className="mb-4">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
-                  Desarrollador Full Stack
+                  Full Stack Developer
                 </h3>
                 <p className="text-foreground/70 leading-relaxed">
-                  Creando experiencias digitales excepcionales con tecnologías modernas. 
-                  Especializado en React, Node.js y arquitecturas escalables.
+                  Creating exceptional digital experiences with modern technologies.
+                  Specialized in Vue.js, Node.js and scalable architectures.
                 </p>
               </div>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://github.com/aomalejandro3181"
                   className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
                   aria-label="GitHub"
                 >
@@ -37,7 +37,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/alejandro-olivar-22810538/?locale=en_US"
                   className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
                   aria-label="LinkedIn"
                 >
@@ -55,7 +55,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="mailto:tu@email.com"
+                  href="mailto:aomalejandro@gmail.com"
                   className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
                   aria-label="Email"
                 >
@@ -69,7 +69,7 @@ export default function Footer() {
             {/* Navigation Links */}
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-4">
-                Navegación
+                Navigation
               </h4>
               <ul className="space-y-2">
                 <li>
@@ -77,23 +77,16 @@ export default function Footer() {
                     onClick={() => scrollToSection('hero')}
                     className="text-foreground/70 hover:text-foreground transition-colors"
                   >
-                    Inicio
+                    Home
                   </button>
                 </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection('skills')}
-                    className="text-foreground/70 hover:text-foreground transition-colors"
-                  >
-                    Habilidades
-                  </button>
-                </li>
+                
                 <li>
                   <button
                     onClick={() => scrollToSection('projects')}
                     className="text-foreground/70 hover:text-foreground transition-colors"
                   >
-                    Proyectos
+                    Projects
                   </button>
                 </li>
                 <li>
@@ -101,7 +94,7 @@ export default function Footer() {
                     onClick={() => scrollToSection('contact')}
                     className="text-foreground/70 hover:text-foreground transition-colors"
                   >
-                    Contacto
+                    Contact
                   </button>
                 </li>
               </ul>
@@ -110,20 +103,20 @@ export default function Footer() {
             {/* Contact Info */}
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-4">
-                Contacto
+                Contact Info
               </h4>
               <ul className="space-y-2 text-foreground/70">
                 <li>
-                  <a href="mailto:tu@email.com" className="hover:text-foreground transition-colors">
-                    tu@email.com
+                  <a href="mailto:aomalejandro@gmail.com" className="hover:text-foreground transition-colors">
+                    aomalejandro@gmail.com
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+1234567890" className="hover:text-foreground transition-colors">
-                    +1 (234) 567-890
+                  <a href="tel:+584125003164" className="hover:text-foreground transition-colors">
+                    +58 412 500 3164
                   </a>
                 </li>
-                <li>Ciudad, País</li>
+                <li>Caracas, Venezuela</li>
               </ul>
             </div>
           </div>
@@ -132,15 +125,10 @@ export default function Footer() {
           <div className="border-t border-foreground/10 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-foreground/60 text-sm">
-                © {currentYear} Desarrollador Full Stack. Todos los derechos reservados.
+                © {currentYear} Alejandro Olivar. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" className="text-foreground/60 hover:text-foreground text-sm transition-colors">
-                  Política de Privacidad
-                </a>
-                <a href="#" className="text-foreground/60 hover:text-foreground text-sm transition-colors">
-                  Términos de Uso
-                </a>
+                
               </div>
             </div>
           </div>

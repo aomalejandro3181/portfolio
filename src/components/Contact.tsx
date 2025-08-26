@@ -32,10 +32,10 @@ export default function Contact() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Hablemos
+              Let's talk
             </h2>
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-              ¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ver cómo puedo ayudarte
+              Do you have a project in mind? I would love to hear about it and see how I can help you
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function Contact() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-6">
-                  Información de Contacto
+                  Contact Information
                 </h3>
                 <div className="space-y-6">
                   {/* Email */}
@@ -56,8 +56,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-foreground/60 text-sm">Email</p>
-                      <a href="mailto:tu@email.com" className="text-foreground font-medium hover:text-blue-500 transition-colors">
-                        tu@email.com
+                      <a href="mailto:aomalejandro@gmail.com" className="text-foreground font-medium hover:text-blue-500 transition-colors">
+                        aomalejandro@gmail.com
                       </a>
                     </div>
                   </div>
@@ -70,9 +70,9 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-foreground/60 text-sm">Teléfono</p>
-                      <a href="tel:+1234567890" className="text-foreground font-medium hover:text-blue-500 transition-colors">
-                        +1 (234) 567-890
+                      <p className="text-foreground/60 text-sm">Phone</p>
+                      <a href="tel:+584125003164" className="text-foreground font-medium hover:text-blue-500 transition-colors">
+                        +58 412 500 3164
                       </a>
                     </div>
                   </div>
@@ -86,8 +86,8 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-foreground/60 text-sm">Ubicación</p>
-                      <p className="text-foreground font-medium">Ciudad, País</p>
+                      <p className="text-foreground/60 text-sm">Location</p>
+                      <p className="text-foreground font-medium">Caracas, Venezuela</p>
                     </div>
                   </div>
                 </div>
@@ -96,11 +96,11 @@ export default function Contact() {
               {/* Social Links */}
               <div>
                 <h4 className="text-lg font-semibold text-foreground mb-4">
-                  Sígueme en
+                  Follow me on
                 </h4>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://github.com/aomalejandro3181"
                     className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -108,7 +108,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://twitter.com/alejandroolivar"
                     className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -116,15 +116,7 @@ export default function Contact() {
                     </svg>
                   </a>
                   <a
-                    href="#"
-                    className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
-                  >
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7l-1.598.001c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
+                    href="https://www.linkedin.com/in/alejandro-olivar-22810538/?locale=en_US"
                     className="w-10 h-10 bg-foreground/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:text-white group"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -138,13 +130,13 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-foreground/10">
               <h3 className="text-2xl font-bold text-foreground mb-6">
-                Envíame un mensaje
+                Send me a message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Nombre *
+                      Name *
                     </label>
                     <input
                       type="text"
@@ -154,7 +146,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-foreground/5 border border-foreground/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="Tu nombre"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
@@ -169,13 +161,13 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-foreground/5 border border-foreground/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="tu@email.com"
+                      placeholder="Your email"
                     />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                    Asunto *
+                    Subject *
                   </label>
                   <input
                     type="text"
@@ -185,12 +177,12 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-foreground/5 border border-foreground/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                    placeholder="¿De qué quieres hablar?"
+                    placeholder="About what do you want to talk?"
                   />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Mensaje *
+                    Message *
                   </label>
                   <textarea
                     id="message"
@@ -200,14 +192,14 @@ export default function Contact() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-foreground/5 border border-foreground/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Cuéntame sobre tu proyecto..."
+                    placeholder="Tell me about your project..."
                   />
                 </div>
                 <button
                   type="submit"
                   className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
-                  Enviar Mensaje
+                  Send Message
                 </button>
               </form>
             </div>
