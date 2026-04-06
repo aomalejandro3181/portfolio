@@ -132,8 +132,7 @@ export default function Projects() {
 
                   {/* Project Links */}
                   <div className="flex gap-4">
-                    <a
-                      href={project.liveUrl}
+                    <a href={project.liveUrl}
                       className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-105"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
