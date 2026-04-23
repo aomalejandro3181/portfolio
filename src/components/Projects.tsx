@@ -62,7 +62,7 @@ export default function Projects() {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 bg-grid-neobrutal">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
