@@ -51,18 +51,9 @@ export default function Contact() {
                             </p>
                         </div>
                         {/* Contact Information */}
-                        <div className="space-y-8 mt-6 ml-2">
+                        <div className="space-y-8 mt-6 ml-2 relative">
                             <div>
                                 <div className="space-y-6">
-                                    {/* Email */}
-                                    <div className="flex items-center space-x-4">
-                                        <div>
-                                            <p className="text-foreground/60 text-sm font-medium">Email</p>
-                                            <a href="mailto:aomalejandro@gmail.com" className="text-foreground font-medium hover:text-blue-500 transition-colors">
-                                                aomalejandro@gmail.com
-                                            </a>
-                                        </div>
-                                    </div>
 
                                     {/* Phone */}
                                     <div className="flex items-center space-x-4">
@@ -115,6 +106,16 @@ export default function Contact() {
                                         </svg>
                                     </a>
                                 </div>
+                                {/* Button go to top */}
+                                <div className="flex justify-end absolute right-0 mt-[30%]">
+                                    <button
+                                        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                        className="w-auto h-auto cursor-pointer px-2 py-2  text-black border-2 border-main shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-normal font-bold">
+                                            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fillRule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                                            </svg>
+                                        </button>
+                                    </div>
                             </div>
                         </div>
                     </div>

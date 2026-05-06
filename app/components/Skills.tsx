@@ -31,7 +31,7 @@ export default function Skills() {
         { name: "Wordpress", icon: <IconWordpress /> },
     ];
     return (
-        <section className="border-y-3 border-main p-6 my-6 overflow-hidden">
+        <section id="skills" className="border-y-3 border-main p-6 my-6 overflow-hidden">
             <div className="w-full flex overflow-hidden">
                 <div className="flex animate-marquee hover:pause-on-hover whitespace-nowrap w-max">
                     {[1, 2, 3].map((i) => (

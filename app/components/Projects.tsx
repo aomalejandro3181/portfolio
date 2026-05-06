@@ -71,7 +71,7 @@ export default function Projects() {
     const otherProjects = projects.filter(project => !project.featured);
     return (
         <section id="projects" className="min-h-screen">
-            <div className="w-10/12 mx-auto px-6 py-10 mb-5 bg-white border-3 border-main shadow-neo-xl bg-grid-neobrutal">
+            <div className="w-10/12 mx-auto px-6 py-10 mb-5 border-3 border-main shadow-neo-xl bg-grid-neobrutal bg-white">
                 <h2 className="border-3 border-main bg-white shadow-neo-xl p-2 text-4xl md:text-4xl font-bold text-foreground mb-4 lg:text-left md:text-center xs:text-center">
                     Projects
                 </h2>

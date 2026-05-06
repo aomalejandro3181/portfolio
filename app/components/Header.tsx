@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const listMenu = ['Home', 'Skills', 'Projects', 'Contact'];
+  const listMenu = ['home', 'skills', 'projects', 'contact'];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -29,7 +29,7 @@ export default function Header() {
               <button
                 key={index}
                 onClick={() => scrollToSection(item)}
-                className="text-foreground/80 hover:text-foreground transition-colors cursor-pointer"
+                className="text-foreground/80 hover:text-foreground transition-colors cursor-pointer capitalize"
               >
                 {item}
               </button>
