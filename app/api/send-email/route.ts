@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { checkBotId } from 'botid/server';
 
 // Ensure this runs on the server only
 export const runtime = 'nodejs';
@@ -16,6 +17,22 @@ export async function POST(req: NextRequest) {
   }
 
   try {
+    const botCheck = await checkBotId({
+      developmentOptions: {
+        bypass: process.env.NODE_ENV !== 'production' ? 'HUMAN' : undefined,
+      },
+      advancedOptions: {
+        checkLevel: 'basic',
+      },
+    });
+
+    if (!botCheck.isHuman && !botCheck.bypassed) {
+      return NextResponse.json(
+        { error: 'Bot protection validation failed' },
+        { status: 403 }
+      );
+    }
+
     const { name, email, subject, message } = await req.json();
 
     if (!email || !subject || !message) {   

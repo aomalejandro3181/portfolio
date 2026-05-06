@@ -1,5 +1,13 @@
+'use client';
 import Image from "next/image";
+import IconStar from "./icons/Star";
 export default function Hero() {
+    const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section id="hero" className="min-h-screen">
         <div className="w-10/12 mx-auto px-6 py-20">
@@ -16,11 +24,18 @@ export default function Hero() {
                         I&apos;m  developer passionate about creating innovative and user-centric web applications. With a focus on clean code and efficient solutions, I bring
                         ideas to life.
                         </p>
+                        
                     </div>
+                    <button onClick={() => scrollToSection('contact')} className="w-auto h-auto bg-accent-blue cursor-pointer mt-8 px-4 py-4  text-white border-2 border-main shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-normal font-bold">
+                        <p className="-rotate-2 hover:rotate-0 transition-all duration-300 capitalize text-xl">Get in touch!</p>
+                    </button>
                 </div>
                 <div className="order-1 md:order-1 lg:order-2 sm:mx-auto sm:rotate-0 lg:w-full lg:mx-auto lg:rotate-0 lg:-m-0 relative border-3 border-main p-1 shadow-neo-xl lg:rotate-3">
                     <div className="w-auto">
                         <Image width={800} height={800} src="/images/me.png" alt="me" loading="eager" className="aspect-square object-cover" />
+                    </div>
+                    <div className="absolute -bottom-10 -left-8 rotate-6">
+                        <IconStar className="w-20 h-20"/>
                     </div>
                 </div>
             </div>

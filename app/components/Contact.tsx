@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { BotIdClient } from 'botid/client';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ export default function Contact() {
         message: ''
     });
     const [showThanks, setShowThanks] = useState(false);
+    const [submitError, setSubmitError] = useState<string | null>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({
@@ -20,11 +22,10 @@ export default function Contact() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission here
+        setSubmitError(null);
+
         console.log('Form submitted:', formData);
-        // Reset form
-        setFormData({ name: '', email: '', subject: '', message: '' });
-        // Send email with resend
+
         const response = await fetch('/api/send-email', {
             method: 'POST',
             headers: {
@@ -32,13 +33,22 @@ export default function Contact() {
             },
             body: JSON.stringify(formData),
         });
+
         const data = await response.json();
+        if (!response.ok) {
+            console.error('Email send failed:', data);
+            setSubmitError(data.error || 'Could not send message at this time.');
+            return;
+        }
+
         console.log('Email sent:', data);
+        setFormData({ name: '', email: '', subject: '', message: '' });
         setShowThanks(true);
     };
 
     return (
         <section id="contact" className="min-h-screen">
+            <BotIdClient protect={[{ path: '/api/send-email', method: 'POST' }]} />
             <div className="w-10/12 mx-auto px-6 py-20">
                 <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className='order-2 md:order-2 lg:order-1'>
@@ -124,7 +134,11 @@ export default function Contact() {
                         {showThanks ? null : (
                             <><h3 className="text-2xl font-bold text-foreground mb-6">
                                 Send me a message
-                            </h3><form onSubmit={handleSubmit} className="space-y-6">
+                            </h3>
+                            {submitError ? (
+                                <p className="text-sm text-red-600 mb-4">{submitError}</p>
+                            ) : null}
+                            <form onSubmit={handleSubmit} className="space-y-6">
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <div>
                                             <input
