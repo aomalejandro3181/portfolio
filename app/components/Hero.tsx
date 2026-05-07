@@ -26,7 +26,7 @@ export default function Hero() {
                         </p>
                         
                     </div>
-                    <button onClick={() => scrollToSection('contact')} className="w-auto h-auto bg-accent-blue cursor-pointer mt-8 px-4 py-4  text-white border-2 border-main shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-normal font-bold">
+                    <button onClick={() => scrollToSection('contact')} className="w-auto h-auto rounded-lg bg-accent-blue cursor-pointer mt-8 px-4 py-4  text-white border-2 border-main shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all text-normal font-bold">
                         <p className="-rotate-2 hover:rotate-0 transition-all duration-300 capitalize text-xl">Get in touch!</p>
                     </button>
                 </div>
@@ -34,7 +34,7 @@ export default function Hero() {
                     <div className="w-auto">
                         <Image width={800} height={800} src="/images/me.png" alt="me" loading="eager" className="aspect-square object-cover" />
                     </div>
-                    <div className="absolute -bottom-10 -left-8 rotate-6">
+                    <div className="absolute -bottom-10 -left-8 rotate-1">
                         <IconStar className="w-20 h-20"/>
                     </div>
                 </div>
