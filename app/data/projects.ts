@@ -153,7 +153,7 @@ const rawProjects: BilingualProject[] = [
         ],
         image: "/images/Abasto.png",
         setImages: [
-          "/images/abasto.png",
+          "/images/abasto-1.png",
           "/images/abasto-2.png",
           "/images/abasto-3.png",
           "/images/abasto-4.png",
