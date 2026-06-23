@@ -5,11 +5,13 @@ import "../globals.css";
 export const metadata: Metadata = {
   title: 'AOM | Full-Stack Developer Portfolio',
   description: 'Portafolio de Ingeniería de Software enfocado en el desarrollo de aplicaciones SaaS multi-tenant, plataformas móviles y diseño neobrutalista.',
+  applicationName: 'AOM Portfolio',
+  authors: [{ name: 'Alejandro Olivar' }],
   
   // Open Graph para LinkedIn, Facebook, WhatsApp
   openGraph: {
     title: 'AOM | Full-Stack Developer Portfolio',
-    description: 'Casos de estudio detallados sobre arquitectura de software, PostgreSQL RLS, Next.js y Flutter.',
+    description: 'Casos de estudio detallados sobre arquitectura de software, donde voy dejando mis experiencias y aprendizajes en el desarrollo de aplicaciones.',
     url: 'https://portfolio-three-topaz-81.vercel.app', // Cambia por tu dominio final si lo actualizas
     siteName: 'AOM Portfolio',
     images: [
