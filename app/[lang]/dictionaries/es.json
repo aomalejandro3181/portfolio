@@ -1,0 +1,74 @@
+{
+  "header": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "toggleMenu": "Alternar menú",
+    "language": "ES"
+  },
+  "hero": {
+    "crafting": "Diseñando",
+    "digitalExperiences": "Experiencias Digitales",
+    "bio": "Soy un desarrollador apasionado por crear aplicaciones web innovadoras y centradas en el usuario. Con un enfoque en código limpio y soluciones eficientes, doy vida a las ideas.",
+    "getInTouch": "¡Contáctame!",
+    "altMe": "mi foto"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de mis trabajos más recientes y significativos",
+    "otherProjects": "Otros Proyectos",
+    "featured": "Proyecto Destacado",
+    "moreDetails": "Más Detalles",
+    "code": "Código",
+    "wip": "Proximamente ..."
+  },
+  "placeholderProject": {
+    "title": "Proximamente",
+    "subtitle": "Mas proyectos vienen en camino.",
+    "note": "Estoy trabajando en nuevos casos de estudios iré actualizando esta sección"
+  },
+  "projectDetail": {
+    "theProblem": "⚠️ EL PROBLEMA",
+    "theSolution": "💡 LA SOLUCIÓN",
+    "architecture": "🏗️ ARQUITECTURA",
+    "monorepoArchitecture": "⚙️ ARQUITECTURA DEL MONOREPO",
+    "separation": "Construido con una separación clara de responsabilidades:",
+    "frontend": "Frontend:",
+    "backend": "Backend:",
+    "technicalChallenges": "RETOS TÉCNICOS",
+    "challenge": "RETO:",
+    "solution": "SOLUCIÓN:",
+    "backToProjects": "Volver a Proyectos",
+    "architectureFlow": "Flujo de Arquitectura Multi-tenant",
+    "layer1Title": "1. CAPA DE ENTRADA (DNS & PROXY)",
+    "layer1Desc": "El proxy de Next.js lee el Host (ej. bodega-x.lvh.me), valida la cookie JWT y reescribe dinámicamente la ruta.",
+    "layer2Title": "2. FRONTEND (Next.js 16 + Zustand)",
+    "layer2Desc": "Renderiza el Dashboard o el POS. Maneja el estado global con Zustand e intercepta respuestas 401 para auto-logout fulminante si el token expira.",
+    "layer3Title": "3. BACKEND CORE (NestJS 11)",
+    "layer3Desc": "Filtra peticiones maliciosas con @nestjs/throttler. El JwtAuthGuard extrae el ID del tenant y el SubscriptionGuard bloquea escrituras si venció el periodo de gracia.",
+    "layer4Title": "4. PERSISTENCIA (PostgreSQL + RLS)",
+    "layer4Desc": "TypeORM ejecuta la consulta dentro de una transacción donde se hace un SET LOCAL app.current_warehouse_id. La base de datos aplica el aislamiento (Row-Level Security) de forma nativa."
+  },
+  "carousel": {
+    "viewEnlarged": "Ver imagen ampliada",
+    "goToImage": "Ir a imagen",
+    "close": "Cerrar"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "¿Tienes un proyecto en mente? Me encantaría escucharlo y ver cómo puedo ayudarte.",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "locationValue": "Caracas, Venezuela",
+    "followMe": "Sígueme en",
+    "formTitle": "Envíame un mensaje",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu correo",
+    "subjectPlaceholder": "¿De qué quieres hablar?",
+    "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+    "sendButton": "Enviar Mensaje",
+    "successMessage": "¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.",
+    "errorMessage": "No se pudo enviar el mensaje en este momento."
+  }
+}

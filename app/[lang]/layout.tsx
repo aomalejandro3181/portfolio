@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from 'next/font/google';
-import "./globals.css";
+import "../globals.css";
+import { Locale } from './dictionaries';
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -12,14 +13,21 @@ export const metadata: Metadata = {
   description: "Professional portfolio of a full stack developer specialized in React, Node.js and modern technologies",
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'es' }];
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: Locale }>;
 }>) {
+  const { lang } = await params;
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${spaceGrotesk.variable} antialiased`}
     >
       <body

@@ -1,0 +1,74 @@
+{
+  "header": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu",
+    "language": "EN"
+  },
+  "hero": {
+    "crafting": "Crafting",
+    "digitalExperiences": "Digital Experiences",
+    "bio": "I'm a developer passionate about creating innovative and user-centric web applications. With a focus on clean code and efficient solutions, I bring ideas to life.",
+    "getInTouch": "Get in touch!",
+    "altMe": "me"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of my most recent and significant works",
+    "otherProjects": "Other Projects",
+    "featured": "Featured Project",
+    "moreDetails": "More Details",
+    "code": "Code",
+    "wip": "Works in progress ..."
+  },
+  "placeholderProject": {
+    "title": "Coming soon",
+    "subtitle": "More projects are on the way.",
+    "note": "I am working on new case studies and will update this section soon."
+  },
+  "projectDetail": {
+    "theProblem": "⚠️ THE PROBLEM",
+    "theSolution": "💡 THE SOLUTION",
+    "architecture": "🏗️ ARCHITECTURE",
+    "monorepoArchitecture": "⚙️ MONOREPO ARCHITECTURE",
+    "separation": "Built with a clear separation of responsibilities:",
+    "frontend": "Frontend:",
+    "backend": "Backend:",
+    "technicalChallenges": "TECHNICAL CHALLENGES",
+    "challenge": "CHALLENGE:",
+    "solution": "SOLUTION:",
+    "backToProjects": "Back to Projects",
+    "architectureFlow": "Multi-tenant Architecture Flow",
+    "layer1Title": "1. ENTRY LAYER (DNS & PROXY)",
+    "layer1Desc": "The Next.js proxy reads the Host (e.g. bodega-x.lvh.me), validates the JWT cookie and dynamically rewrites the route.",
+    "layer2Title": "2. FRONTEND (Next.js 16 + Zustand)",
+    "layer2Desc": "Renders the Dashboard or POS. Manages global state with Zustand and intercepts 401 responses for immediate auto-logout if the token expires.",
+    "layer3Title": "3. BACKEND CORE (NestJS 11)",
+    "layer3Desc": "Filters malicious requests with @nestjs/throttler. The JwtAuthGuard extracts the tenant ID and the SubscriptionGuard blocks writes if the grace period has expired.",
+    "layer4Title": "4. PERSISTENCE (PostgreSQL + RLS)",
+    "layer4Desc": "TypeORM executes the query inside a transaction where SET LOCAL app.current_warehouse_id is run. The database applies isolation (Row-Level Security) natively."
+  },
+  "carousel": {
+    "viewEnlarged": "View enlarged image",
+    "goToImage": "Go to image",
+    "close": "Close"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Do you have a project in mind? I would love to hear about it and see how I can help you.",
+    "phone": "Phone",
+    "location": "Location",
+    "locationValue": "Caracas, Venezuela",
+    "followMe": "Follow me on",
+    "formTitle": "Send me a message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "subjectPlaceholder": "About what do you want to talk?",
+    "messagePlaceholder": "Tell me about your project...",
+    "sendButton": "Send Message",
+    "successMessage": "Thanks for your message I will get back to you soon!",
+    "errorMessage": "Could not send message at this time."
+  }
+}
