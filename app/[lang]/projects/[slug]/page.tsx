@@ -10,7 +10,7 @@ import { getDictionary, Locale } from '../../dictionaries';
 import IconStar from '@/app/components/icons/Star';
 
 interface PageProps {
-    params: Promise<{ slug: string; lang: Locale }>;
+    params: Promise<{ slug: string; lang: string }>;
 }
 
 export async function generateStaticParams() {
@@ -30,8 +30,9 @@ export async function generateStaticParams() {
 
 export default async function ProjectDetail({ params }: PageProps) {
     const { slug, lang } = await params;
-    const dict = await getDictionary(lang);
-    const projects = getProjects(lang);
+    const locale = lang as Locale;
+    const dict = await getDictionary(locale);
+    const projects = getProjects(locale);
     const project = projects.find(p => p.slug === slug);
 
     if (!project) {
