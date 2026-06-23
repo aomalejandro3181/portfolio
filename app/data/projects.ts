@@ -228,7 +228,7 @@ const rawProjects: BilingualProject[] = [
             }
             }
         ],
-        image: "/images/si-presto.png",
+        image: "/images/Si-presto.png",
         setImages: [
             "/images/Si-presto-1.jpeg",
             "/images/Si-presto-2.jpeg",

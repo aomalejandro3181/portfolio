@@ -179,7 +179,7 @@ export default async function ProjectDetail({ params }: PageProps) {
                     <div className='w-full flex justify-end pr-6 -mt-8'>
                         <IconStar className="w-20 h-20"/>
                     </div>
-                    <div className='w-1/2 h-85 flex flex-col mx-auto'>
+                    <div className=' max-w-9/12 lg:w-1/2 h-85 flex flex-col mx-auto'>
                         <ProjectCarousel images={project.setImages} title={project.title} dict={dict.carousel} />
                     </div>
                     <div className="mt-8 text-center pb-8">
